@@ -34,12 +34,25 @@ if($_SERVER['REQUEST_METHOD'] == "POST");
         echo"<p>Maiúsculo: ". strtoupper($nome) ."</p>";
         $s = str_replace("a", "4", $nome);
         echo "<p>Substituição da letra A: $s </p>";
+        date_default_timezone_set('america/Sao_Paulo');
         $dia = date("d");
         echo "<p>Dia: $dia</p>";
         $mes = date("m");
         echo"<p>Mês: $mes</p>";
         $tempo = date("d/m/Y H:i:s");
         echo "<p>$tempo</p>";
+
+        $exp = pow($idade, 2);
+        echo "<p>Exponencial: $exp</p>";
+
+        $valor = rand(1,13);
+        echo "<p>Valor aleatório: $valor<p>";
+
+        $resultado = 10.34 * 2.9;
+        echo "<p>Resultado sem formatação: $resultado</p>";
+
+        $resultado = number_format($resultado, 4, ",", ".");
+        echo "<p>Resultado formatado: $resultado</p>";
     }
 }
 ?>

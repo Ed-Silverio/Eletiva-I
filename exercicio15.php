@@ -12,10 +12,10 @@
 <form method="post" action="resposta15.php">
 <div class="mb-3">
               <label for="preco" class="form-label">Insira um preço</label>
-              <input type="double" id="preco" name="preco" class="form-control" required="">
+              <input type="number" step="0.1" id="preco" name="preco" class="form-control" required="">
             </div><div class="mb-3">
               <label for="desc" class="form-label">Insira um percentual de desconto (ex: 10):</label>
-              <input type="double" id="desc" name="desc" class="form-control" required="">
+              <input type="number" step="0.1" id="desc" name="desc" class="form-control" required="">
             </div>
 <button type="submit" class="btn btn-primary">Enviar</button>
 </form>

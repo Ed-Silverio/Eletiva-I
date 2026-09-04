@@ -15,7 +15,7 @@
               <input type="number" id="kilograma" name="kilograma" class="form-control" required="">
             </div><div class="mb-3">
               <label for="altura" class="form-label">Insira sua altura em metros</label>
-              <input type="double" id="altura" name="altura" class="form-control" required="">
+              <input type="number" step="0.1" id="altura" name="altura" class="form-control" required="">
             </div>
 <button type="submit" class="btn btn-primary">Enviar</button>
 </form>

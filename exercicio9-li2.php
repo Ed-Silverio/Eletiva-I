@@ -19,23 +19,13 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 
 <?php
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        $numero = $_POST['numero'];
-        if ($numero > 0) {
-            $fatorial = 1;
-            for ($i = $numero; $i >= 1; $i--) {
-                $fatorial = $fatorial * $i;
-                echo "<p>$fatorial</p>";
-            }
-            echo "<p>O fatorial de $numero é: $fatorial</p>";
-        } elseif ($numero == 0) {
-            echo "<p>O fatorial de $numero é: 1</p>";
-        }
-        else {
-            echo "<p>O número tem que ser pelo menos 0.</p>";
-        }
-       
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $numero = $_POST['numero'];
+    for($i = 1; $i <= 10; $i++) {
+        $tabuada = $numero * $i;
+        echo "<p>$numero x $i = $tabuada</p>";
     }
+}
 ?>
 
 </div>

@@ -25,6 +25,15 @@ if ($_POST) {
     $palavras = count($palavrasEncontradas[0]);
     echo "<p>A frase '$frase' contém $palavras palavras.</p>";
 
+    $maior = $palavrasEncontradas[0][0];
+    for ($i = 1; $i < $palavras; $i++) {
+    if (strlen($palavrasEncontradas[0][$i]) > strlen($maior)) {
+        $maior = $palavrasEncontradas[0][$i];
+    }
+
+    }
+    echo "<p>A maior palavra da frase é '$maior'.</p>";
+
 
 }
 ?>
